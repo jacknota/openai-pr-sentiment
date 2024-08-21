@@ -1,0 +1,16 @@
+POST https://api.openai.com/v1/chat/completions
+content-type: application/json
+Authorization: Bearer sk-hPPX__9f_ylRtPjgXT8tQsO8W_WZaLDwxdVsC7ik6nT3BlbkFJ8iNn5aQJ3hJ-dw4bm3omELXzU2UpXbGf8xdokqglIA
+
+{
+  "model": "gpt-4o-mini",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Act like a Principal Software Engineer."
+    },
+    {
+      "role": "user",
+        "content": "PR comment: You should consider using objPayment instead of objPaymentDetails since objPayment has the details you need and has a lighter payload.\nSentiment score: 10\nSentiment comment: This comment is helpful as it provides a constructive suggestion for improvement. It also provides an alternative to the current implementation.\nPR comment: Are you serious? Do you even know how to code?\nSentimant score: 1\nSentimatent comment: This comment is abrasive and confrontational, lacking constructive feedback.\nPR comment: This is okay.\nSentiment score: 3\nSentiment comment: This comment is neutral. It provides minimal feedback without clear direction for improvement or praise.\nPR comment: Not good enough.\nSentiment score: 2\nSentiment comment: This comment is somewhat abrasive and it lacks detail and a constructive approach to suggest how to improve.\nPR comment: The for loop you used might not perform as well as we would need. You might want to consider an alternative.\nSentiment score: 5\nSentiment comment: This comment is constructive and provides helpful feedback, suggesting that there may be a performance issue with the current implementation and recommending the consideration of an alternative approach. It is direct yet maintains a professional tone.However, it does not recommend options for an alternative method.\nPR comment: Your coding shows a lack of understanding of the company standards. Please review the standards wiki and compare that to the code you wrote. I'm declining this PR."    }
+  ]
+}
