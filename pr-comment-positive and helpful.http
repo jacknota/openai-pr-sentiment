@@ -1,5 +1,6 @@
 POST https://api.openai.com/v1/chat/completions
 content-type: application/json
+//insert your OpenAI API key in the variable below.
 Authorization: {{KEY}}
 
 {
